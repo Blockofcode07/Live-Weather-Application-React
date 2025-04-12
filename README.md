@@ -66,3 +66,18 @@ Follow the steps below to generate your free API key from OpenWeather:
 6. You will see your **default API key** listed there. Click to **copy** the key — you’ll use this in your project to access weather data.
 
 > 💡 Keep your API key safe and do not expose it publicly in frontend code or GitHub repositories.
+
+## 🧩 Create the Header Component
+
+Create a `Header` component to show the name of the app at the top.
+
+1. In the `src/components` folder, create a file called `Header.js`.
+
+2. Inside `Header.js`, add a heading with the text:  
+   **"Live Weather Application using React"**
+
+3. Add a class called `heading` to the heading for styling.
+
+4. In `App.js`, import the `Header` component and add `<Header />` to display it.
+
+5. Add styles for the `.heading` class in your CSS file.

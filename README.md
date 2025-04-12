@@ -177,7 +177,7 @@ The `InputCity` component will now receive the state, input handler, and submit 
 
 Now you have successfully set up the `InputCity` component to handle user input and API submission in your React application!
 
-## 🧩 Create Layout Component
+## 🧩 Create ShowWeather Component
 
 In this task, you will create a layout component that shares a common header and footer across multiple pages. This component will display weather data and will be located in the `/usercode/application/src/Components/ShowWeather.js` file. Follow the steps below to complete this task:
 
@@ -199,3 +199,32 @@ In this task, you will create a layout component that shares a common header and
 ---
 
 This layout will serve as the foundation for displaying weather data in your app, and it will help in maintaining a consistent structure across different pages.
+
+## 🧩 Use the API to Fetch Data
+
+In this task, you will use the API that you have created in openWeather platform. Use the following URL to access the API:
+
+```
+https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid={{api_key_weather_app}}
+```
+
+Follow these steps to use the API to fetch data:
+
+* Assign the API URL to a variable.
+* Create a function to fetch data from the URL.
+* Pass the data to the component to show data.
+
+## 🧩 Use Weather Data
+
+After passing some dummy data in the layout, pass the data from the `/usercode/application/src/App.js` file, receive it in the `/usercode/application/src/Components/ShowWeather.js` file, and display those values.
+
+The OpenWeather API returns an object `data` that contains various properties. You'll use some properties from the `data` object and display them in the `/usercode/application/src/Components/ShowWeather.js` file. To do so, add the following variables in the `ShowWeather` components:
+
+* `city`: To store the city name.
+* `country`: To store the country name.
+* `temperature`: To store the temperature in that city.
+* `pressure`: To store the wind pressure in that city.
+* `visibility`: To store the visibility in that city.
+* `humidity`: To store the humidity in that city.
+* `clouds`: To store the cloud state in that city.
+

@@ -176,3 +176,26 @@ The `InputCity` component will now receive the state, input handler, and submit 
 ---
 
 Now you have successfully set up the `InputCity` component to handle user input and API submission in your React application!
+
+## 🧩 Create Layout Component
+
+In this task, you will create a layout component that shares a common header and footer across multiple pages. This component will display weather data and will be located in the `/usercode/application/src/Components/ShowWeather.js` file. Follow the steps below to complete this task:
+
+### 1. **Create the Layout Component:**
+
+- Navigate to `/usercode/application/src/Components/ShowWeather.js`.
+- This component will handle the layout for displaying weather information.
+  
+### 2. **Add Dummy Data for Weather:**
+
+- For now, use some dummy weather data to display in the layout. You will later replace this with real data from the API.
+  
+### 3. **Include Header and Footer:**
+
+- The layout should include a standard header at the top and a footer at the bottom, which will be shared across multiple pages.
+
+> 💡 Remember: This layout will eventually be updated to fetch and display real data from the weather API.
+
+---
+
+This layout will serve as the foundation for displaying weather data in your app, and it will help in maintaining a consistent structure across different pages.

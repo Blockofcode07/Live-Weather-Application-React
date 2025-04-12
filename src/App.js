@@ -1,9 +1,14 @@
 import React from 'react';
 import "./styles.css";
 import Header from './Components/Header';
+import InputCity from "./Components/InputCity";
 const App = () => {
   return(
-    <Header />
+    <div>
+       <Header />
+       <InputCity />
+    </div>
+
   )
 }
 

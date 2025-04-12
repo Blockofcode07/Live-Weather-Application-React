@@ -81,3 +81,35 @@ Create a `Header` component to show the name of the app at the top.
 4. In `App.js`, import the `Header` component and add `<Header />` to display it.
 
 5. Add styles for the `.heading` class in your CSS file.
+
+
+## 🧩 Create the InputCity Component
+
+The `InputCity` component will allow users to enter the name of a city and initiate an API call to fetch weather data.
+
+### Follow these steps:
+
+1. In the `src/components` folder, create a new file called `InputCity.js`.
+
+2. Inside `InputCity.js`, create a functional React component.
+
+3. Add an **input field** where users can type the city name. Set the value of this input to the `city` state.
+
+4. Use the `onInputHandler` function to handle the **onChange** event and update the `city` state whenever the user types something.
+
+5. After the input field, add a **Submit button**. When clicked, it should trigger an API call using the city name entered by the user.
+
+6. Make sure the component takes two attributes:
+    - `city`: Retains the city name provided by the user.
+    - `onInputHandler`: This function handles changes in the input value.
+
+7. Finally, in `App.js`, import the `InputCity` component and render it on the page.
+
+8. Added necessary styles in the CSS file to match the UI changes.
+
+> ✅ The component now includes styling that reflects the new input field and button design.
+
+### Example:
+- The input field will capture the city name.
+- The Submit button will trigger the API call to fetch weather data for the entered city.
+

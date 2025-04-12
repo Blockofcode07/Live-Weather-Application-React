@@ -48,7 +48,7 @@ In this project, you will use the **OpenWeather platform’s free API** to fetch
 
 > **Note:** To get the API key for OpenWeather, click [here](https://openweathermap.org/api).
 
-## 🔑 How to Get Your OpenWeather API Key
+## How to Get Your OpenWeather API Key
 
 Follow the steps below to generate your free API key from OpenWeather:
 
@@ -67,7 +67,7 @@ Follow the steps below to generate your free API key from OpenWeather:
 
 > 💡 Keep your API key safe and do not expose it publicly in frontend code or GitHub repositories.
 
-## 🧩 Create the Header Component
+## Create the Header Component
 
 Create a `Header` component to show the name of the app at the top.
 
@@ -83,7 +83,7 @@ Create a `Header` component to show the name of the app at the top.
 5. Add styles for the `.heading` class in your CSS file.
 
 
-## 🧩 Create the InputCity Component
+## Create the InputCity Component
 
 The `InputCity` component will allow users to enter the name of a city and initiate an API call to fetch weather data.
 
@@ -113,7 +113,7 @@ The `InputCity` component will allow users to enter the name of a city and initi
 - The input field will capture the city name.
 - The Submit button will trigger the API call to fetch weather data for the entered city.
 
-## 🧩 Connect the InputCity Component in the Application
+## Connect the InputCity Component in the Application
 
 In this task, you will use the `InputCity` component and handle user input by managing state in the React application. Follow the steps below carefully to complete this part.
 
@@ -177,7 +177,7 @@ The `InputCity` component will now receive the state, input handler, and submit 
 
 Now you have successfully set up the `InputCity` component to handle user input and API submission in your React application!
 
-## 🧩 Create ShowWeather Component
+## Create ShowWeather Component
 
 In this task, you will create a layout component that shares a common header and footer across multiple pages. This component will display weather data and will be located in the `/usercode/application/src/Components/ShowWeather.js` file. Follow the steps below to complete this task:
 
@@ -200,7 +200,7 @@ In this task, you will create a layout component that shares a common header and
 
 This layout will serve as the foundation for displaying weather data in your app, and it will help in maintaining a consistent structure across different pages.
 
-## 🧩 Use the API to Fetch Data
+## Use the API to Fetch Data
 
 In this task, you will use the API that you have created in openWeather platform. Use the following URL to access the API:
 
@@ -214,7 +214,7 @@ Follow these steps to use the API to fetch data:
 * Create a function to fetch data from the URL.
 * Pass the data to the component to show data.
 
-## 🧩 Use Weather Data
+## Use Weather Data
 
 After passing some dummy data in the layout, pass the data from the `/usercode/application/src/App.js` file, receive it in the `/usercode/application/src/Components/ShowWeather.js` file, and display those values.
 
@@ -238,3 +238,29 @@ Let's create a simple method that returns the color code with the temperature ra
 * If the temperature is between 10 and 30 degrees Celsius then return the green color.
 * If the temperature is greater than 30 degrees Celsius then return a red color.
 
+## 🔧 Add Error Handler
+
+It’s now time to add error handling to the `App.js` file. When a user types in an invalid city name, our API returns an error rather than the property. In that case, the error message will be displayed instead of the `ShowWeather` component.
+
+In this task, handle an error state where the user might enter an invalid city name. You must update a hook to pass the error message to the layout component.
+
+
+# Add Styling to Your Application
+
+1. Start the application using the following command:
+   ```bash
+   npm start
+      ```
+      refresh the “Browser” tab to view the application.
+
+2. At this point, the application is running but does not have any styles. To enhance the user experience, it's time to **add styling** to the application.
+
+3. **Styling is crucial** for creating an engaging and visually appealing user interface. Proper styling ensures the application is easy to navigate and pleasant to interact with.
+
+4. **Most important step for human eyes**: Add the following styles to improve the design and make it more user-friendly.
+
+---
+
+# Thank You
+
+Thank you for reading and your patience.

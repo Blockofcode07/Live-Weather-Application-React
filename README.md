@@ -113,3 +113,66 @@ The `InputCity` component will allow users to enter the name of a city and initi
 - The input field will capture the city name.
 - The Submit button will trigger the API call to fetch weather data for the entered city.
 
+## 🧩 Connect the InputCity Component in the Application
+
+In this task, you will use the `InputCity` component and handle user input by managing state in the React application. Follow the steps below carefully to complete this part.
+
+### ✅ Step-by-Step Instructions:
+
+## 1. Import `useState` from React
+At the top of your `App.js` file, make sure to import the `useState` hook:
+```js
+import { useState } from "react";
+```
+
+---
+
+## 2. Add a State Property
+Declare a new state variable to store the city name entered by the user:
+```js
+const [inputCity, setInputCity] = useState("Seattle");
+```
+This will initialize the city state with "Seattle" by default.
+
+---
+
+## 3. Create the Input Handler Method
+Define a method to handle input changes and update the `inputCity` state when the user types:
+```js
+const inputHandler = (event) => {
+  setInputCity(event.target.value);
+};
+```
+
+---
+
+## 4. Create the Submit Handler Method
+Define the method that handles the form submission (such as pressing the submit button). This will be used to call the API with the city name:
+```js
+const submitHandler = (event) => {
+  event.preventDefault(); 
+};
+```
+
+---
+
+## 5. Use the `InputCity` Component
+Inside your `App.js` file, add the `InputCity` component and pass the required props: `city`, `onInputHandler`, and `onSubmitHandler`:
+```jsx
+<InputCity 
+  city={inputCity} 
+  onInputHandler={inputHandler} 
+  onSubmitHandler={submitHandler} 
+/>
+```
+The `InputCity` component will now receive the state, input handler, and submit handler from the parent `App` component.
+
+---
+
+## 6. Final Notes on Props
+- **Props** are used to pass data and methods between components. In this case, you are passing the `city` state, `onInputHandler`, and `onSubmitHandler` functions to the `InputCity` component.
+- Make sure you use the passed props properly within the `InputCity` component for the application to work as expected.
+
+---
+
+Now you have successfully set up the `InputCity` component to handle user input and API submission in your React application!

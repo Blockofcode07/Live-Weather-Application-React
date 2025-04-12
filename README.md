@@ -27,6 +27,17 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
+## 🌤️ Live Weather Application
+
+You can view the live weather application by visiting the link below:
+
+👉 [Live Weather App](https://live-weather-application-react.netlify.app/)
+
+This app provides real-time weather updates based on city name input. Try it out and get the current temperature, wind, humidity, and more!
+
+---
+
+
 # Live Weather App Project - OpenWeather API
 
 **API** stands for **Application Programming Interface**, which allows two applications to communicate with each other.

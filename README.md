@@ -237,3 +237,4 @@ Let's create a simple method that returns the color code with the temperature ra
 * If the temperature is less than 10 degrees Celsius then return a blue color.
 * If the temperature is between 10 and 30 degrees Celsius then return the green color.
 * If the temperature is greater than 30 degrees Celsius then return a red color.
+

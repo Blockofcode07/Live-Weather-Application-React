@@ -3,6 +3,7 @@ import InputCity from "./Components/InputCity";
 import Header from "./Components/Header";
 import "./styles.css";
 import ShowWeather from "./Components/ShowWeather"
+import Footer from './Components/Footer';
 
 export default function App() {
   const [weatherData, setWeatherData] = useState("");
@@ -56,6 +57,7 @@ export default function App() {
       ) : (
           <ShowWeather data={weatherData} />
         )}
+        <Footer />
     </div>
   );
 }

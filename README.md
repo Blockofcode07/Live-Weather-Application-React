@@ -228,3 +228,12 @@ The OpenWeather API returns an object `data` that contains various properties. Y
 * `humidity`: To store the humidity in that city.
 * `clouds`: To store the cloud state in that city.
 
+## 🧩 Add Dynamic Background
+
+In this task, create the dynamic background on the base of the temperature received by the API.
+
+Let's create a simple method that returns the color code with the temperature range. You can follow these ranges:
+
+* If the temperature is less than 10 degrees Celsius then return a blue color.
+* If the temperature is between 10 and 30 degrees Celsius then return the green color.
+* If the temperature is greater than 30 degrees Celsius then return a red color.

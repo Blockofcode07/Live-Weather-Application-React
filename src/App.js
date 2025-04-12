@@ -23,8 +23,9 @@ export default function App() {
   };
 
   //  Weather API
-  const URL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=b88082c6e627cc75b2b04edb4a6c73e3`;
-
+  const API_KEY = process.env.REACT_APP_API_KEY_WEATHER_APP;
+  const URL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}`;
+  
   //  Fetching weather data
   async function fetchData(URL) {
 

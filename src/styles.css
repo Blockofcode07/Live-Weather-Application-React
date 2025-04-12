@@ -85,7 +85,6 @@ body {
   width: 80%;
   max-width: 700px;
   margin: 2rem auto;
-  margin-top: -1rem;
   background: var(--card-bg);
   backdrop-filter: blur(10px);
   border-radius: 25px;
@@ -133,7 +132,7 @@ body {
   padding: 1rem;
   font-size: 0.75rem;
   color: #64748b;
-  margin-top: -2rem;
+  margin-top: 2rem;
 }
 
 /* Error Message */

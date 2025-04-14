@@ -255,7 +255,6 @@ In this task, handle an error state where the user might enter an invalid city n
 
 3. **Styling is crucial** for creating an engaging and visually appealing user interface. Proper styling ensures the application is easy to navigate and pleasant to interact with.
 
-4. **Most important step for human eyes**: Add the following styles to improve the design and make it more user-friendly.
 
 ---
 

@@ -1,10 +1,10 @@
 :root {
-  --primary: #3b82f6; /* Soft Blue */
-  --secondary: #f472b6; /* Rose Pink */
+  --primary: #000000; /* Soft Blue */
+  --secondary: #0bafc1; /* Rose Pink */
   --bg-gradient: linear-gradient(to right, #e0f2fe, #f0f9ff);
   --text-dark: #1e293b;
   --text-light: #ffffff;
-  --card-bg: #ffffffcc;
+  --card-bg: #548586cc;
   --error-bg: #fee2e2;
   --error-border: #f87171;
   --button-bg: #3b82f6;
@@ -129,7 +129,7 @@ body {
 /* Footer */
 .footer {
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
   font-size: 0.75rem;
   color: #64748b;
   margin-top: 2rem;

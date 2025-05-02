@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import InputCity from "./Components/InputCity";
 import Header from "./Components/Header";
 import "./styles.css";
-import ShowWeather from "./Components/ShowWeather"
-import Footer from './Components/Footer';
+import ShowWeather from "./Components/Backup-ShowWeather"
+import Footer from './Components/Backup-Footer';
+import { ThemeProvider } from '../src/Components/ThemeContext';
 
 export default function App() {
   const [weatherData, setWeatherData] = useState("");
@@ -25,7 +26,7 @@ export default function App() {
   //  Weather API
   const API_KEY = process.env.REACT_APP_API_KEY_WEATHER_APP;
   const URL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}`;
-  
+
   //  Fetching weather data
   async function fetchData(URL) {
 
@@ -46,19 +47,21 @@ export default function App() {
 
 
   return (
-    <div>
-      <Header />
-      <InputCity
-        city={inputCity}
-        onInputHandler={inputHandler}
-        onSubmitHandler={submitHandler}
-      />
-      {error ? (
-        <h3 className="error">No data found :( </h3>
-      ) : (
+    <ThemeProvider>
+      <div>
+        <Header />
+        <InputCity
+          city={inputCity}
+          onInputHandler={inputHandler}
+          onSubmitHandler={submitHandler}
+        />
+        {error ? (
+          <h3 className="error">No data found :( </h3>
+        ) : (
           <ShowWeather data={weatherData} />
         )}
         <Footer />
-    </div>
+    </div >
+    </ThemeProvider>
   );
 }
